@@ -1,0 +1,17 @@
+1. what is Broadcast Receiver  
+2. what is content provide with there examples how you used it , 
+3. what is service , types of service , intent, 
+4. launch modes , what kind of thrads, difference betwenn thrad and corotines  
+5. work manager
+
+
+day 1 -> 
+
+android core , koltin core, mvvm , live data , view model , clean arctitecure, 
+day 2 -> 
+retrofit , security , networking , corotines , solid principles, room DB, jetpack compose 
+
+1. when use late init, and lazy with real examples ,  
+2.  ?, !!, ?: in deatils with examples 3.  what is higher-order functions. with real examples 
+4.  scope functions in details with examples 
+5. Suspend keyword 6. sealed class 7. inline function 8. live data 

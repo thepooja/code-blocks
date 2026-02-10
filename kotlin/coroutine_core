@@ -1,0 +1,32 @@
+Read Article here -> https://proandroiddev.com/android-interview-series-2024-part-5-kotlin-coroutines-3dd1ae81c721
+
+## What are Coroutines?
+
+- Coroutines are lightweight threads for asynchronous programming.
+- Coroutines are lightweight — We can run many coroutines on a single thread due to its support for suspension.
+- They help:
+- Avoid callback hell
+- Write sequential async code
+- Manage background tasks efficiently
+- Coroutines have fewer memory leaks — coroutines follow the structured concurrency principle
+- Coroutines offer built-in cancellation support
+
+## Coroutine scopes
+
+- Global Scope :
+- CoroutineScope :
+-
+
+## Suspend Function
+
+- Suspending functions are those functions that can be paused and then continued later.
+
+- Suspend functions are only allowed to be called from a coroutine or another suspend function.
+
+## coroutine builders
+
+- Coroutine builders are functions for initialising or creating new coroutines.
+- Types of Builders
+- launch : launches a new coroutine concurrently, i.e., without blocking the current thread. It’s typically used for fire-and-forget tasks where you don’t need a return value.
+- async : launch a new coroutine; the only difference is that it returns a deferred instead of a Job. The deferred is a non-blocking future that promises to deliver the result later. ( use await() function )
+- runBlocking: runs a new coroutine and blocks the current thread until its completion
