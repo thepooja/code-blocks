@@ -32,7 +32,17 @@
 - Marks a function that can pause & resume without blocking thread.
 
 8. Object vs companion object
+
+- Object : “An object in Kotlin is used to create a singleton — a class with only one instance.”
+  ✔ Created lazily
+  ✔ Thread-safe
+  ✔ No constructor
+
+- Companion Object :
+
 9. what is higher-order functions
+
+- “A higher-order function is a function that takes another function as a parameter, returns a function, or does both.”
 
 10. scope functions
 
@@ -44,9 +54,20 @@
 
 11. What is a reified keyword in Kotlin
 
+- “Reified allows us to access the actual type of a generic at runtime. It only works with inline functions.”
+
 12. inline function
+
+- “An inline function replaces the function call with the actual function body during compilation.”
+
 13. What are extension functions?
+
+- “Extension functions allow adding new functionality to an existing class without modifying its source code.”
+
 14. Sealed Class -
+
+- “Sealed classes are used to represent restricted class hierarchies.”
+  - “Sealed classes allow representing complex UI states with associated data, unlike enums.”
 
 ## OOPS in Kotlin
 

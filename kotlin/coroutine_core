@@ -1,5 +1,9 @@
 Read Article here -> https://proandroiddev.com/android-interview-series-2024-part-5-kotlin-coroutines-3dd1ae81c721
 
+## Structured concurrency
+
+- “Structured concurrency is a coroutine design principle where child coroutines are bound to a parent scope and automatically cancelled when the parent is cancelled.”
+
 ## What are Coroutines?
 
 - Coroutines are lightweight threads for asynchronous programming.
@@ -30,3 +34,13 @@ Read Article here -> https://proandroiddev.com/android-interview-series-2024-par
 - launch : launches a new coroutine concurrently, i.e., without blocking the current thread. It’s typically used for fire-and-forget tasks where you don’t need a return value.
 - async : launch a new coroutine; the only difference is that it returns a deferred instead of a Job. The deferred is a non-blocking future that promises to deliver the result later. ( use await() function )
 - runBlocking: runs a new coroutine and blocks the current thread until its completion
+- withContext: It is a suspending function that is used to switch coroutine context within a coroutine. It suspends the current coroutine, switches to the specified context, and resumes execution in the new context.
+
+## Coroutine Dispatcher
+
+- Dispatchers.Main: Runs the coroutine on the main (UI) thread, useful for updating UI elements.
+- Dispatchers.IO: IO Dispatchers initiate the coroutine on the IO thread ( e.g - reading or writing files, making database queries, or making network requests)
+- Dispatchers.Default: The default dispatcher is used when no other dispatcher is explicitly specified in the scope.
+-
+
+##
